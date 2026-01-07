@@ -1,0 +1,454 @@
+body {
+  background: #000;
+  min-height: 100vh;
+  position: relative;
+}
+
+.background__detail {
+  background-color: #00f4bf;
+  height: calc(100% - 389px);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 195px;
+  z-index: 0;
+}
+
+.button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 10px;
+  height: 52px;
+  justify-content: center;
+  line-height: normal;
+  padding: 16px 24px;
+  text-align: center;
+  width: 208px;
+}
+
+.content {
+  background-color: #000;
+  border: 1px solid #1875e8;
+  filter: drop-shadow(0px 0px 30px #1875e8);
+  height: 871px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  z-index: 1;
+}
+
+.content__corner-rectangle {
+  background-color: #00f4bf;
+  bottom: -15px;
+  clip-path: polygon(0% 100%, 0% 50%, 4% 0%, 100% 0%, 100% 50%, 96% 100%);
+  height: 33px;
+  position: absolute;
+  right: 32px;
+  width: 511px;
+  z-index: 3;
+}
+
+.content__main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  justify-content: start;
+  padding: 100px;
+}
+
+.friends__container {
+  align-items: center;
+  border: 1px solid #1875e8;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 21px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 160%;
+  margin-top: 1rem;
+  padding: 24px;
+  width: 453px;
+}
+
+.friends__container > p {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.friends__title {
+  color: #1875e8;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+  font-style: normal;
+}
+
+.form__buttons {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+
+.form__input {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #1875e8;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  font-size: 21px;
+  font-weight: 400;
+  height: 56px;
+  margin-bottom: 32px;
+  outline: none;
+  padding: 8px 16px;
+  width: 517px;
+}
+
+.form__input::placeholder {
+  color: #fff;
+  font-size: 21px;
+}
+
+.form__label {
+  color: #1875e8;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+
+.form__link {
+  color: #00f4bf;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.page__image {
+  position: absolute;
+  right: 0;
+  top: 76px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.prizeDraw__container {
+  color: #fff;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 700;
+  height: 199px;
+  line-height: 160%;
+  margin-top: 1rem;
+}
+
+.prizeDraw__title {
+  color: #00f4bf;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.primary {
+  background-color: #1875e8;
+  color: #fff;
+}
+
+.section--results {
+  align-items: start;
+  display: flex;
+  font-family: Inter;
+  font-style: normal;
+  gap: 48px;
+}
+
+.section__title {
+  color: #fff;
+  font-family: Chakra Petch;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80%;
+  margin: 0 0 80px 0;
+}
+
+.section__title > span {
+  color: #1875e8;
+}
+
+.secondary {
+  background-color: #fff;
+  color: #1875e8;
+}
+.tela-sorteio {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: #fff;
+  font-family: Inter;
+}
+
+.resultado-texto {
+  font-size: 32px;
+  text-align: center;
+  line-height: 140%;
+}
+
+.resultado-texto span {
+  color: #00f4bf;
+  font-size: 40px;
+  font-weight: bold;
+}
+/* Tela de resultado centralizada */
+.tela-sorteio {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: #fff;
+  font-family: Inter;
+  text-align: center;
+}
+
+/* Texto grande e legível */
+.resultado-texto {
+  font-size: 36px;
+  line-height: 140%;
+  font-weight: 700;
+  color: #00f4bf;
+}
+
+/* Botão Próximo */
+.tela-sorteio .button {
+  font-size: 24px;
+  width: 220px;
+  height: 60px;
+}
+/* Tela de resultado - centralizada dentro da content */
+.tela-sorteio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #000; /* mantém o fundo preto da content */
+}
+
+/* Texto grande e legível */
+.resultado-texto {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  color: #00f4bf;
+  word-wrap: break-word;
+}
+
+/* Botão Próximo centralizado */
+.tela-sorteio .button {
+  font-size: 24px;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Tela de resultado centralizada */
+.tela-sorteio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #000; /* mantém o fundo preto */
+    text-align: center;
+}
+
+/* Texto grande e legível com seta */
+.resultado-texto {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #00f4bf;
+    word-wrap: break-word;
+}
+
+/* Botões centralizados em linha */
+.buttons-tela-sorteio {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Botões */
+.tela-sorteio .button {
+    font-size: 24px;
+    width: 180px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botão secundário (Reiniciar) */
+.tela-sorteio .secondary {
+    background-color: #fff;
+    color: #1875e8;
+}
+/* Tela de resultado centralizada */
+.tela-sorteio {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #000;
+  text-align: center;
+}
+
+/* Texto grande e legível com seta */
+.resultado-texto {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #00f4bf;
+  word-wrap: break-word;
+}
+
+/* Botões centralizados em linha */
+.buttons-tela-sorteio {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Botões */
+.tela-sorteio .button {
+  font-size: 24px;
+  width: 180px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botão secundário (Reiniciar) */
+.tela-sorteio .secondary {
+  background-color: #fff;
+  color: #1875e8;
+}
+/* ===== RESPONSIVO PARA CELULAR ===== */
+@media (max-width: 768px) {
+
+  /* Content ocupa quase toda a tela */
+  .content {
+    width: 90%;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  /* Fonte da seção principal menor */
+  .section__title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  /* Formulário */
+  .form__input {
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+  }
+
+  .form__buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form__buttons .button {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+  }
+
+  .form__link {
+    font-size: 20px;
+  }
+
+  /* Lista de amigos */
+  .friends__container {
+    width: 100%;
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  /* Tela de resultado */
+  .tela-sorteio {
+    padding: 20px;
+    gap: 24px;
+  }
+
+  .resultado-texto {
+    font-size: 28px;
+  }
+
+  .buttons-tela-sorteio .button {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+  }
+
+  /* Imagem de presente menor e mais adaptável */
+  .page__image {
+    width: 100px;
+    top: 20px;
+    right: 10px;
+  }
+}
+
